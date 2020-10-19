@@ -39,6 +39,8 @@ function App() {
       .then(json=> {
         setMeme(json.data.url)
       }))
+      setTopText('')
+      setBottomText('')
   }
   const handleClick = (imageId) => {
     setSelectedId(imageId)
@@ -47,13 +49,21 @@ function App() {
   return (
     <div className="App">
         <form onSubmit={handleSubmit}>
-          <input type="text" name="top" value={toptext} onChange={handleChange}/>
-          <input type="text" name="bottom" value={bottomText} onChange={handleChange}/>
-          <input type="submit"/>
+          <div className="container">
+           <div> Wpisz tekst na góre obrazka</div>
+          <input type="text" name="top" className="top" value={toptext} onChange={handleChange}/>
+          </div>
+
+       <div  className="container">
+            <div>tekst na dole obrazka</div>
+          <input type="text" name="bottom" className="bottom" value={bottomText} onChange={handleChange}/>
+       </div>
+          <input className="button" type="submit" value="Wygeneruj"/>
         </form>
         <div className="meme">
           {meme ? <img src={meme}/>:null}
         </div>
+        <div className="description">Wybierz obrazek który chcesz przerobić.</div>
         <div className="meme-container">
             {templates && templates.map(item => (
               <img src={item.url} id={item.id} alt="item" onClick={() => handleClick(item.id)}/>
