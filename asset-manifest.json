@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/meme-generator/static/css/main.d50cdab4.chunk.css",
-    "main.js": "/meme-generator/static/js/main.0981ce80.chunk.js",
-    "main.js.map": "/meme-generator/static/js/main.0981ce80.chunk.js.map",
-    "runtime-main.js": "/meme-generator/static/js/runtime-main.a7b6aceb.js",
-    "runtime-main.js.map": "/meme-generator/static/js/runtime-main.a7b6aceb.js.map",
-    "static/js/2.14c52d03.chunk.js": "/meme-generator/static/js/2.14c52d03.chunk.js",
-    "static/js/2.14c52d03.chunk.js.map": "/meme-generator/static/js/2.14c52d03.chunk.js.map",
-    "index.html": "/meme-generator/index.html",
-    "precache-manifest.d1cd999c76b2fab3f38617392974cd9f.js": "/meme-generator/precache-manifest.d1cd999c76b2fab3f38617392974cd9f.js",
-    "service-worker.js": "/meme-generator/service-worker.js",
-    "static/css/main.d50cdab4.chunk.css.map": "/meme-generator/static/css/main.d50cdab4.chunk.css.map",
-    "static/js/2.14c52d03.chunk.js.LICENSE.txt": "/meme-generator/static/js/2.14c52d03.chunk.js.LICENSE.txt"
+    "main.css": "/szkapec.github.io/meme-generator/static/css/main.d50cdab4.chunk.css",
+    "main.js": "/szkapec.github.io/meme-generator/static/js/main.0981ce80.chunk.js",
+    "main.js.map": "/szkapec.github.io/meme-generator/static/js/main.0981ce80.chunk.js.map",
+    "runtime-main.js": "/szkapec.github.io/meme-generator/static/js/runtime-main.330bd3d9.js",
+    "runtime-main.js.map": "/szkapec.github.io/meme-generator/static/js/runtime-main.330bd3d9.js.map",
+    "static/js/2.14c52d03.chunk.js": "/szkapec.github.io/meme-generator/static/js/2.14c52d03.chunk.js",
+    "static/js/2.14c52d03.chunk.js.map": "/szkapec.github.io/meme-generator/static/js/2.14c52d03.chunk.js.map",
+    "index.html": "/szkapec.github.io/meme-generator/index.html",
+    "precache-manifest.b58620aee187629a37ebb376d601baad.js": "/szkapec.github.io/meme-generator/precache-manifest.b58620aee187629a37ebb376d601baad.js",
+    "service-worker.js": "/szkapec.github.io/meme-generator/service-worker.js",
+    "static/css/main.d50cdab4.chunk.css.map": "/szkapec.github.io/meme-generator/static/css/main.d50cdab4.chunk.css.map",
+    "static/js/2.14c52d03.chunk.js.LICENSE.txt": "/szkapec.github.io/meme-generator/static/js/2.14c52d03.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a7b6aceb.js",
+    "static/js/runtime-main.330bd3d9.js",
     "static/js/2.14c52d03.chunk.js",
     "static/css/main.d50cdab4.chunk.css",
     "static/js/main.0981ce80.chunk.js"
