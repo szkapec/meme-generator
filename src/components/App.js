@@ -5,6 +5,7 @@ function App() {
   const [bottomText, setBottomText] = useState('')
   const [templates, setTemplates] = useState([]);
   const [selectedId, setSelectedId] = useState(null);
+  const [url, setUrl] = useState(null);
   const [meme, setMeme] = useState(null)
 
   useEffect(() => {
@@ -42,8 +43,9 @@ function App() {
       setTopText('')
       setBottomText('')
   }
-  const handleClick = (imageId) => {
+  const handleClick = (imageId, url) => {
     setSelectedId(imageId)
+    setUrl(url)
   }
   console.log(templates)
   return (
@@ -58,15 +60,18 @@ function App() {
             <div>tekst na dole obrazka</div>
           <input type="text" name="bottom" className="bottom" value={bottomText} onChange={handleChange}/>
        </div>
-          <input className="button" type="submit" value="Wygeneruj"/>
+          <input className="button" type="submit" value="Wygeneruj" onClick={()=> setUrl(null)}/>
         </form>
+
+        
         <div className="meme">
-          {meme ? <img src={meme}/>:null}
+          <div>{meme ? <img src={meme}/>:null}</div>
+          <div>{url&&<img src={url} alt="click image"/>}</div>
         </div>
         <div className="description">Wybierz obrazek który chcesz przerobić.</div>
         <div className="meme-container">
             {templates && templates.map(item => (
-              <img src={item.url} id={item.id} alt="item" onClick={() => handleClick(item.id)}/>
+              <img src={item.url} id={item.id} alt="item" onClick={() => handleClick(item.id, item.url)}/>
             ))}
         </div>
     </div>
